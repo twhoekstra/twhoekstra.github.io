@@ -1,3 +1,7 @@
+---
+template: "index.html"
+---
+
 # Home
 
 

@@ -52,7 +52,7 @@ accent = "orange"
 logo = "lucide/user-round"
 
 [project.theme]
-favicon = "assets/favicon.ico"
+#favicon = "assets/favicon.ico"
 features = [
     "navigation.indexes",
     "navigation.instant",
