@@ -1,0 +1,55 @@
+/* Project card background images */
+.grid.cards li {
+    position: relative;
+    overflow: hidden;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Individual project backgrounds - using base64 placeholder images for now */
+.grid.cards li.project-poreflow {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grid.cards li.project-nostics {
+    background-image: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grid.cards li.project-thesis {
+    background-image: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grid.cards li.project-march {
+    background-image: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Content overlay for better readability */
+.grid.cards li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
+
+/* Ensure content appears above background */
+.grid.cards li > * {
+    position: relative;
+    z-index: 1;
+}
